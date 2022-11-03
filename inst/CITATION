@@ -1,0 +1,23 @@
+bibentry(bibtype = "Misc",
+    title        = "A review of probabilistic forecasting and prediction with machine learning",
+    author       = c(person(given = "Hristos",
+                          family = "Tyralis",
+                          email = "montchrister@gmail.com"),
+                   person(given = "Georgia",
+                          family = "Papacharalampous",
+                          email = "papacharalampous.georgia@gmail.com")
+                   ),
+    publisher    = "arXiv",
+    year         = "2022",
+    pages        = "1--83",
+    doi          = "10.48550/arXiv.2209.08307",
+    url          = "https://arxiv.org/abs/2209.08307",
+    copyright    = "Creative Commons Attribution 4.0 International",
+
+    header       = "To cite scoringfunctions in publications use:",
+    
+    textVersion  = paste("Tyralis H, Papacharalampous G (2022)",
+                       "A review of probabilistic forecasting and prediction with machine learning.",
+                        "https://arxiv.org/abs/2209.08307."
+                    )
+)

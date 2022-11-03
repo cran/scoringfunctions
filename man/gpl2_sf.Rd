@@ -1,0 +1,112 @@
+\name{gpl2_sf}
+
+\alias{gpl2_sf}
+
+\title{
+Generalized piecewise linear scoring function (type 2)
+}
+
+\description{
+The function gpl2_sf computes the generalized piecewise linear scoring
+function at a specific level \eqn{p} for \eqn{g(x) = \log(x)}, when \eqn{y}
+materializes and \eqn{x} is the predictive quantile at level \eqn{p}.
+
+The generalized piecewise linear scoring function is negatively oriented (i.e.
+the smaller, the better).
+
+The generalized piecewise linear scoring function is defined by eq. (25) in
+Gneiting (2011) and the form implemented here for the specific \eqn{g(x)} is
+defined by eq. (26) in Gneiting (2011) for \eqn{b = 0}.
+}
+
+\usage{
+gpl2_sf(x, y, p)
+}
+
+\arguments{
+\item{x}{Predictive quantile (prediction) at level \eqn{p}. It can be a vector
+of length \eqn{n} (must have the same length as \eqn{y}).}
+
+\item{y}{Realization (true value) of process. It can be a vector of length
+\eqn{n} (must have the same length as \eqn{x}).}
+
+\item{p}{It can be a vector of length \eqn{n} (must have the same length as
+\eqn{y}).}
+}
+
+\details{
+The generalized piecewise linear scoring function (type 2) is defined by:
+
+    \deqn{
+        S(x, y, p) := (1(x \geq y) - p) \log(x/y)
+    }
+
+Domain of function:
+
+    \deqn{x > 0}
+
+    \deqn{y > 0}
+
+    \deqn{0 < p < 1}
+    
+Range of function:
+
+    \deqn{S(x, y, p) \geq 0, \forall x, y > 0, p \in (0, 1)}
+}
+
+\value{
+Vector of generalized piecewise linear losses.
+}
+
+\note{
+The implemented function is denoted as type 2 since it corresponds to a specific
+type of \eqn{g(x)} of the general form of the generalized piecewise linear
+scoring function defined by eq. (25) in Gneiting (2011).
+
+For the definition of quantiles, see Koenker and Bassett Jr (1978).
+
+The herein implemented generalized piecewise linear scoring function is strictly
+consistent for the \eqn{p}-quantile functional relative to the family
+\eqn{\mathbb{F}} of potential probability distributions \eqn{F} for the future
+\eqn{y} for which \eqn{E_F[\log(Y)]} exists and is finite (Gneiting 2011).
+}
+
+\references{
+Gneiting T (2011) Making and evaluating point forecasts.
+\emph{Journal of the American Statistical Association} \bold{106(494)}:746--762.
+\doi{10.1198/jasa.2011.r10138}.
+
+Koenker R, Bassett Jr G (1978) Regression quantiles. \emph{Econometrica}
+\bold{46(1)}:33--50. \doi{10.2307/1913643}.
+}
+
+\examples{
+# Compute the generalized piecewise linear scoring function (type 2).
+
+df <- data.frame(
+    y = rep(x = 2, times = 6),
+    x = c(1, 2, 3, 1, 2, 3),
+    p = c(rep(x = 0.05, times = 3), rep(x = 0.95, times = 3))
+)
+
+df$gpl2_penalty <- gpl2_sf(x = df$x, y = df$y, p = df$p)
+
+print(df)
+
+# The generalized piecewise linear scoring function (type 2) is half the MAE-LOG
+# scoring function.
+
+df <- data.frame(
+    y = rep(x = 5.5, times = 10),
+    x = 1:10,
+    p = rep(x = 0.5, times = 10)
+)
+
+df$gpl2_penalty <- gpl2_sf(x = df$x, y = df$y, p = df$p)
+
+df$mae_log_penalty <- maelog_sf(x = df$x, y = df$y)
+
+df$ratio <- df$gpl2_penalty/df$mae_log_penalty
+
+print(df)
+}
