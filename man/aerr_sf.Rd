@@ -57,13 +57,21 @@ the better).
 The absolute error scoring function is strictly consistent for the median
 functional relative to the family \eqn{\mathbb{F}} of potential probability
 distributions \eqn{F} for the future \eqn{y} for which the first moment exists
-and is finite (Gneiting 2011).
+and is finite (Thomson 1979, Saerens 2000, Gneiting 2011).
 }
 
 \references{
 Gneiting T (2011) Making and evaluating point forecasts.
 \emph{Journal of the American Statistical Association} \bold{106(494)}:746--762.
 \doi{10.1198/jasa.2011.r10138}.
+
+Saerens M (2000) Building cost functions minimizing to some summary statistics.
+\emph{IEEE Transactions on Neural Networks} \bold{11(6)}:1263--1271.
+\doi{10.1109/72.883416}.
+
+Thomson W (1979) Eliciting production possibilities from a well-informed
+manager. \emph{Journal of Economic Theory} \bold{20(3)}:360--380.
+\doi{10.1016/0022-0531(79)90042-5}.
 }
 
 \examples{

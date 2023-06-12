@@ -59,8 +59,8 @@ The implemented function is denoted as type 1 since it corresponds to a specific
 type of \eqn{\phi(x)} of the general form of the Bregman scoring function
 defined by eq. (18) in Gneiting (2011).
 
-For details on the Bregman scoring function, see Banerjee et al. (2005) and
-Gneiting (2011).
+For details on the Bregman scoring function, see Savage 1971, Banerjee et al.
+(2005) and Gneiting (2011).
 
 The mean functional is the mean \eqn{E_F[Y]} of the probability distribution
 \eqn{F} of \eqn{y} (Gneiting 2011).
@@ -71,7 +71,7 @@ better).
 The herein implemented Bregman scoring function is strictly consistent for the
 mean functional relative to the family \eqn{\mathbb{F}} of potential probability
 distributions \eqn{F} for the future \eqn{y} for which \eqn{E_F[Y]} and
-\eqn{E_F[|Y|^a]} exist and are finite (Gneiting 2011).
+\eqn{E_F[|Y|^a]} exist and are finite (Savage 1971, Gneiting 2011).
 }
 
 \references{
@@ -82,6 +82,10 @@ a Bregman predictor. \emph{IEEE Transactions on Information Theory}
 Gneiting T (2011) Making and evaluating point forecasts.
 \emph{Journal of the American Statistical Association} \bold{106(494)}:746--762.
 \doi{10.1198/jasa.2011.r10138}.
+
+Savage LJ  (1971) Elicitation of personal probabilities and expectations.
+\emph{Journal of the American Statistical Association} \bold{66(337)}:783--810.
+\doi{10.1080/01621459.1971.10482346}.
 }
 
 \examples{

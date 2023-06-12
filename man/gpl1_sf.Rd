@@ -73,7 +73,8 @@ the smaller, the better).
 The herein implemented generalized piecewise linear scoring function is strictly
 consistent for the \eqn{p}-quantile functional relative to the family
 \eqn{\mathbb{F}} of potential probability distributions \eqn{F} for the future
-\eqn{y} for which \eqn{E_F[Y^b]} exists and is finite (Gneiting 2011).
+\eqn{y} for which \eqn{E_F[Y^b]} exists and is finite (Thomson 1979,
+Saerens 2000, Gneiting 2011).
 }
 
 \references{
@@ -83,6 +84,14 @@ Gneiting T (2011) Making and evaluating point forecasts.
 
 Koenker R, Bassett Jr G (1978) Regression quantiles. \emph{Econometrica}
 \bold{46(1)}:33--50. \doi{10.2307/1913643}.
+
+Saerens M (2000) Building cost functions minimizing to some summary statistics.
+\emph{IEEE Transactions on Neural Networks} \bold{11(6)}:1263--1271.
+\doi{10.1109/72.883416}.
+
+Thomson W (1979) Eliciting production possibilities from a well-informed
+manager. \emph{Journal of Economic Theory} \bold{20(3)}:360--380.
+\doi{10.1016/0022-0531(79)90042-5}.
 }
 
 \examples{

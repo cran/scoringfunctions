@@ -46,7 +46,7 @@ Vector of MAE-SD losses.
 }
 
 \note{
-For details on the MAE-SD scoring function, see (Gneiting 2011) and Patton
+For details on the MAE-SD scoring function, see Gneiting (2011) and Patton
 (2011).
 
 The median functional is the median of the probability distribution \eqn{F} of
@@ -58,7 +58,7 @@ better).
 The MAE-SD scoring function is strictly consistent for the median functional
 relative to the family \eqn{\mathbb{F}} of potential probability distributions
 \eqn{F} for the future \eqn{y} for which \eqn{E_F[Y^{1/2}]} exists and is finite
-(Gneiting 2011).
+(Thomson 1979, Saerens 2000, Gneiting 2011).
 }
 
 \references{
@@ -69,6 +69,14 @@ Gneiting T (2011) Making and evaluating point forecasts.
 Patton AJ (2011) Volatility forecast comparison using imperfect volatility
 proxies. \emph{Journal of Econometrics} \bold{160(1)}:246--256.
 \doi{10.1016/j.jeconom.2010.03.034}.
+
+Saerens M (2000) Building cost functions minimizing to some summary statistics.
+\emph{IEEE Transactions on Neural Networks} \bold{11(6)}:1263--1271.
+\doi{10.1109/72.883416}.
+
+Thomson W (1979) Eliciting production possibilities from a well-informed
+manager. \emph{Journal of Economic Theory} \bold{20(3)}:360--380.
+\doi{10.1016/0022-0531(79)90042-5}.
 }
 
 \examples{

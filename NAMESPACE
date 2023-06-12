@@ -1,10 +1,24 @@
-export("aerr_sf", "aperr_sf",
-    "bregman1_sf", "bregman2_sf", "bregman3_sf", "bregman4_sf",
-    "capping_function", "expectile_sf", "ghuber_sf",
-    "gpl1_sf", "gpl2_sf",
+export("aerr_sf",
+    "aperr_sf",
+    "bmedian_sf",
+    "bregman1_sf",
+    "bregman2_sf",
+    "bregman3_sf",
+    "bregman4_sf",
+    "capping_function",
+    "expectile_sf",
+    "ghuber_sf",
+    "gpl1_sf",
+    "gpl2_sf",
     "huber_sf",
-    "maelog_sf", "maesd_sf",
-    "quantile_sf", "serr_sf")
+    "maelog_sf",
+    "maesd_sf",
+    "obsweighted_sf",
+    "quantile_sf",
+    "relerr_sf",
+    "serr_sf",
+    "sperr_sf",
+    "srelerr_sf")
 
 # Import all packages listed as Imports or Depends
 

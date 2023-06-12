@@ -28,7 +28,7 @@ can be a vector of length \eqn{n} (must have the same length as \eqn{y}).}
 }
 
 \details{
-The absolute error scoring function is defined by:
+The absolute percentage error scoring function is defined by:
 
     \deqn{S(x, y) := |(x - y)/y|}
 
@@ -74,7 +74,7 @@ Gneiting T (2011) Making and evaluating point forecasts.
 }
 
 \examples{
-# Compute the absolute error scoring function.
+# Compute the absolute percentage error scoring function.
 
 df <- data.frame(
     y = rep(x = 2, times = 3),
