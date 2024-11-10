@@ -3,16 +3,16 @@
 \alias{gpl2_sf}
 
 \title{
-Generalized piecewise linear scoring function (type 2)
+Generalized piecewise linear power scoring function (type 2)
 }
 
 \description{
-The function gpl2_sf computes the generalized piecewise linear scoring
+The function gpl2_sf computes the generalized piecewise linea power scoring
 function at a specific level \eqn{p} for \eqn{g(x) = \log(x)}, when \eqn{y}
 materializes and \eqn{x} is the predictive quantile at level \eqn{p}.
 
-The generalized piecewise linear scoring function is negatively oriented (i.e.
-the smaller, the better).
+The generalized piecewise linear power scoring function is negatively oriented
+(i.e. the smaller, the better).
 
 The generalized piecewise linear scoring function is defined by eq. (25) in
 Gneiting (2011) and the form implemented here for the specific \eqn{g(x)} is
@@ -35,11 +35,19 @@ of length \eqn{n} (must have the same length as \eqn{y}).}
 }
 
 \details{
-The generalized piecewise linear scoring function (type 2) is defined by:
+The generalized piecewise linear power scoring function (type 2) is defined by:
 
     \deqn{
-        S(x, y, p) := (1(x \geq y) - p) \log(x/y)
+        S(x, y, p) := (\textbf{1} \lbrace x \geq y \rbrace - p) \log(x/y)
     }
+
+or equivalently
+
+    \deqn{
+        S(x, y, p) := p | \max \lbrace -(\log(x) - \log(y)), 0 \rbrace | +
+        (1 - p) | \max \lbrace \log(x) - \log(y), 0 \rbrace |
+    }
+
 
 Domain of function:
 
@@ -60,16 +68,16 @@ Vector of generalized piecewise linear losses.
 
 \note{
 The implemented function is denoted as type 2 since it corresponds to a specific
-type of \eqn{g(x)} of the general form of the generalized piecewise linear
+type of \eqn{g(x)} of the general form of the generalized piecewise linear power
 scoring function defined by eq. (25) in Gneiting (2011).
 
 For the definition of quantiles, see Koenker and Bassett Jr (1978).
 
-The herein implemented generalized piecewise linear scoring function is strictly
-consistent for the \eqn{p}-quantile functional relative to the family
-\eqn{\mathbb{F}} of potential probability distributions \eqn{F} for the future
-\eqn{y} for which \eqn{E_F[\log(Y)]} exists and is finite (Thomson 1979,
-Saerens 2000, Gneiting 2011).
+The herein implemented generalized piecewise linear power scoring function is
+strictly \eqn{\mathbb{F}}-consistent for the \eqn{p}-quantile functional.
+\eqn{\mathbb{F}} is the family of probability distributions \eqn{F} for which
+\eqn{\textnormal{E}_F[\log(Y)]} exists and is finite (Thomson 1979; Saerens
+2000; Gneiting 2011).
 }
 
 \references{

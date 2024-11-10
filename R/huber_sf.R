@@ -20,7 +20,9 @@ huber_sf <- function(x, y, a)
     # Mathematical Statistics 35(1):73-101.
     # https://doi.org/10.1214/aoms/1177703732.
 
-    u <- abs(x - y)
+    err <- x - y
 
-    ifelse(u <= a, (0.5 * (u^2)), (a * u - 0.5 * (a^2)))
+    cf <- capping_function(t = err, a = a, b = a)
+
+    cf * (err - cf/2)
 }

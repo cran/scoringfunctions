@@ -24,5 +24,7 @@ expectile_sf <- function(x, y, p)
     # Newey WK, Powell JL (1987) Asymmetric least squares estimation and
     # testing. Econometrica 55(4):819-847. https://doi.org/10.2307/1911031.
 
-    ((x - y)^2) * (abs(as.numeric(y <= x) - p))
+    err <- x - y
+
+    p * (pmin(err, 0))^2 + (1 - p) * (pmax(err, 0))^2
 }

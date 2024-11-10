@@ -28,5 +28,7 @@ gpl1_sf <- function(x, y, p, b)
     # Koenker R, Bassett Jr G (1978) Regression quantiles. Econometrica 46(1):
     # 33-50. https://doi.org/10.2307/1913643.
 
-    (((x^b) - (y^b)) * (as.numeric(y <= x) - p))/(abs(b))
+    err <- x^b - y^b
+    
+    (p * pmax(-err, 0) + (1 - p) * pmax(err, 0))/(abs(b))
 }

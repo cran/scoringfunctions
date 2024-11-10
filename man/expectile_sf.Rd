@@ -3,7 +3,8 @@
 \alias{expectile_sf}
 
 \title{
-Asymmetric piecewise quadratic scoring function (expectile scoring function)
+Asymmetric piecewise quadratic scoring function (expectile scoring function,
+expectile loss function)
 }
 
 \description{
@@ -35,20 +36,27 @@ of length \eqn{n} (must have the same length as \eqn{y}).}
 The asymmetric piecewise quadratic scoring function is defined by:
 
     \deqn{
-        S(x, y, p) := |1(x \geq y) - p| (x - y)^2
+        S(x, y, p) := |\textbf{1} \lbrace x \geq y \rbrace - p| (x - y)^2
+    }
+
+or equivalently,
+
+    \deqn{
+        S(x, y, p) := p (\max \lbrace -(x - y), 0 \rbrace)^2 +
+        (1 - p) (\max \lbrace x - y, 0 \rbrace)^2
     }
 
 Domain of function:
 
-    \deqn{x \in \R}
+    \deqn{x \in \mathbb{R}}
 
-    \deqn{y \in \R}
+    \deqn{y \in \mathbb{R}}
 
     \deqn{0 < p < 1}
     
 Range of function:
 
-    \deqn{S(x, y, p) \geq 0, \forall x, y \in \R, p \in (0, 1)}
+    \deqn{S(x, y, p) \geq 0, \forall x, y \in \mathbb{R}, p \in (0, 1)}
 }
 
 \value{
@@ -61,10 +69,10 @@ For the definition of expectiles, see Newey and Powell (1987).
 The asymmetric piecewise quadratic scoring function is negatively oriented (i.e.
 the smaller, the better).
 
-The asymmetric piecewise quadratic scoring function is strictly consistent for
-the \eqn{p}-expectile functional relative to the family \eqn{\mathbb{F}} of
-potential probability distributions \eqn{F} for the future \eqn{y} for which
-\eqn{E_F[Y^2]} exists and is finite (Gneiting 2011).
+The asymmetric piecewise quadratic scoring function is strictly
+\eqn{\mathbb{F}}-consistent for the \eqn{p}-expectile functional.
+\eqn{\mathbb{F}} is the family  of probability distributions \eqn{F} for which
+\eqn{\textnormal{E}_F[Y^2]} exists and is finite (Gneiting 2011).
 }
 
 \references{

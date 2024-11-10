@@ -24,5 +24,7 @@ quantile_sf <- function(x, y, p)
     # Koenker R, Bassett Jr G (1978) Regression quantiles. Econometrica 46(1):
     # 33-50. https://doi.org/10.2307/1913643.
 
-    (x - y) * (as.numeric(y <= x) - p)
+    err <- x - y
+
+    p * pmax(-err, 0) + (1 - p) * pmax(err, 0)
 }

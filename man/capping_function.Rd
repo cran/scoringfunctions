@@ -33,9 +33,21 @@ The capping function \eqn{\kappa_{a,b}(t)} is defined by:
     
     \deqn{\kappa_{a,b}(t) := \max \lbrace \min \lbrace t,b \rbrace, -a \rbrace}
 
+or equivalently,
+
+   \deqn{
+        \kappa_{a,b}(t) := \left\{
+        \begin{array}{ll}
+        -a, & t \leq -a\\
+        t, & -a < t \leq b\\
+        b, & t > b
+        \end{array}
+        \right.
+    }
+
 Domain of function:
 
-    \deqn{t \in \R}
+    \deqn{t \in \mathbb{R}}
 
     \deqn{a \geq 0}
 

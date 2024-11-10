@@ -40,19 +40,38 @@ vector of length \eqn{n} (must have the same length as \eqn{y}).}
 The generalized Huber scoring function is defined by:
 
     \deqn{
-        S(x, y, p, a, b) := |1(x \geq y) - p|
+        S(x, y, p, a, b) := |\textbf{1} \lbrace x \geq y \rbrace - p|
             (y^2 - (\kappa_{a,b}(x - y) + y)^2 + 2 x \kappa_{a,b}(x - y))
     }
 
-where \eqn{\kappa_{a,b}(t)} is the capping function defined by:
+or equivalently
+
+    \deqn{
+        S(x, y, p, a, b) :=
+        |\textbf{1} \lbrace x \geq y \rbrace - p| f_{a,b}(x - y)
+    }
+
+or
+
+    \deqn{
+        S(x, y, p, a, b) :=
+        p f_{a,b}(- \max \lbrace -(x - y), 0 \rbrace) +
+        (1 - p) f_{a,b}(\max \lbrace x - y, 0 \rbrace)
+    }
+
+where
+
+    \deqn{f_{a,b}(t) := \kappa_{a,b}(t) (2 t - \kappa_{a,b}(t))}
+
+and \eqn{\kappa_{a,b}(t)} is the capping function defined by:
 
     \deqn{\kappa_{a,b}(t) := \max \lbrace \min \lbrace t,b \rbrace, -a \rbrace}
 
 Domain of function:
 
-    \deqn{x \in \R}
+    \deqn{x \in \mathbb{R}}
 
-    \deqn{y \in \R}
+    \deqn{y \in \mathbb{R}}
 
     \deqn{0 < p < 1}
 
@@ -62,7 +81,7 @@ Domain of function:
     
 Range of function:
 
-    \deqn{S(x, y, p, a, b) \geq 0, \forall x, y \in \R, p \in (0, 1), a, b > 0}
+    \deqn{S(x, y, p, a, b) \geq 0, \forall x, y \in \mathbb{R}, p \in (0, 1), a, b > 0}
 }
 
 \value{
@@ -77,11 +96,11 @@ Taggart (2002).
 The generalized Huber scoring function is negatively oriented (i.e. the smaller,
 the better).
 
-The generalized Huber scoring function is strictly consistent for the
-\eqn{p}-Huber functional relative to the family \eqn{\mathbb{F}} of potential
-probability distributions \eqn{F} for the future \eqn{y} for which
-\eqn{E_F[Y^2 - (Y - a)^2]} and \eqn{E_F[Y^2 - (Y + b)^2]} exist and are finite
-(Taggart 2022).
+The generalized Huber scoring function is strictly \eqn{\mathbb{F}}-consistent
+for the \eqn{p}-Huber functional. \eqn{\mathbb{F}} is the family of probability
+distributions \eqn{F} for which \eqn{\textnormal{E}_F[Y^2 - (Y - a)^2]} and
+\eqn{\textnormal{E}_F[Y^2 - (Y + b)^2]} (or equivalently
+\eqn{\textnormal{E}_F[Y]}) exist and are finite (Taggart 2022).
 }
 
 \references{

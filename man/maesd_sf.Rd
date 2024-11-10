@@ -55,10 +55,10 @@ The median functional is the median of the probability distribution \eqn{F} of
 The MAE-SD scoring function is negatively oriented (i.e. the smaller, the
 better).
 
-The MAE-SD scoring function is strictly consistent for the median functional
-relative to the family \eqn{\mathbb{F}} of potential probability distributions
-\eqn{F} for the future \eqn{y} for which \eqn{E_F[Y^{1/2}]} exists and is finite
-(Thomson 1979, Saerens 2000, Gneiting 2011).
+The MAE-SD scoring function is strictly \eqn{\mathbb{F}}-consistent for the
+median functional. \eqn{\mathbb{F}} is the family of probability distributions
+\eqn{F} for which \eqn{\textnormal{E}_F[Y^{1/2}]} exists and is finite (Thomson
+1979; Saerens 2000; Gneiting 2011).
 }
 
 \references{

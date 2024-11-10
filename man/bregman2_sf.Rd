@@ -45,11 +45,11 @@ Domain of function:
 
     \deqn{y > 0}
 
-    \deqn{b \in \R \setminus \lbrace 0, 1 \rbrace}
+    \deqn{b \in \mathbb{R} \setminus \lbrace 0, 1 \rbrace}
     
 Range of function:
 
-    \deqn{S(x, y, b) \geq 0, \forall x, y > 0, b \in \R \setminus
+    \deqn{S(x, y, b) \geq 0, \forall x, y > 0, b \in \mathbb{R} \setminus
         \lbrace 0, 1 \rbrace}
 }
 
@@ -62,21 +62,21 @@ The implemented function is denoted as type 2 since it corresponds to a specific
 type of \eqn{\phi(x)} of the general form of the Bregman scoring function
 defined by eq. (18) in Gneiting (2011).
 
-For details on the Bregman scoring function, see Savage 1971, Banerjee et al.
+For details on the Bregman scoring function, see Savage (1971), Banerjee et al.
 (2005) and Gneiting (2011). For details on the specific form implemented here,
 see Patton (2011).
 
-The mean functional is the mean \eqn{E_F[Y]} of the probability distribution
-\eqn{F} of \eqn{y} (Gneiting 2011).
+The mean functional is the mean \eqn{\textnormal{E}_F[Y]} of the probability
+distribution \eqn{F} of \eqn{y} (Gneiting 2011).
 
 The Bregman scoring function is negatively oriented (i.e. the smaller, the
 better).
 
-The herein implemented Bregman scoring function is strictly consistent for the
-mean functional relative to the family \eqn{\mathbb{F}} of potential probability
-distributions \eqn{F} for the future \eqn{y} for which \eqn{E_F[Y]} and
-\eqn{E_F[\dfrac{1}{b (b - 1)} Y^b]} exist and are finite (Savage 1971,
-Gneiting 2011).
+The herein implemented Bregman scoring function is strictly
+\eqn{\mathbb{F}}-consistent for the mean functional. \eqn{\mathbb{F}} is the
+family of probability distributions \eqn{F} for which \eqn{\textnormal{E}_F[Y]}
+and \eqn{\textnormal{E}_F[\dfrac{1}{b (b - 1)} Y^b]} exist and are finite
+(Savage 1971; Gneiting 2011).
 }
 
 \references{

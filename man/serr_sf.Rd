@@ -32,13 +32,13 @@ The squared error scoring function is defined by:
 
 Domain of function:
 
-    \deqn{x \in \R}
+    \deqn{x \in \mathbb{R}}
 
-    \deqn{y \in \R}
+    \deqn{y \in \mathbb{R}}
     
 Range of function:
 
-    \deqn{S(x, y) \geq 0, \forall x, y \in \R}
+    \deqn{S(x, y) \geq 0, \forall x, y \in \mathbb{R}}
 }
 
 \value{
@@ -46,19 +46,19 @@ Vector of squared errors.
 }
 
 \note{
-For details on the squared error scoring function, see Savage 1971, Gneiting
+For details on the squared error scoring function, see Savage (1971), Gneiting
 (2011).
 
-The mean functional is the mean \eqn{E_F[Y]} of the probability distribution
-\eqn{F} of \eqn{y} (Gneiting 2011).
+The mean functional is the mean \eqn{\textnormal{E}_F[Y]} of the probability
+distribution \eqn{F} of \eqn{y} (Gneiting 2011).
 
 The squared error scoring function is negatively oriented (i.e. the smaller, the
 better).
 
-The squared error scoring function is strictly consistent for the mean
-functional relative to the family \eqn{\mathbb{F}} of potential probability
-distributions \eqn{F} for the future \eqn{y} for which the second moment exists
-and is finite (Savage 1971, Gneiting 2011).
+The squared error scoring function is strictly \eqn{\mathbb{F}}-consistent for
+the mean functional. \eqn{\mathbb{F}} is the family of probability distributions
+\eqn{F} for which the second moment exists and is finite (Savage 1971;
+Gneiting 2011).
 }
 
 \references{

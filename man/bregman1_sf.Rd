@@ -39,15 +39,15 @@ The Bregman scoring function (type 1) is defined by:
 
 Domain of function:
 
-    \deqn{x \in \R}
+    \deqn{x \in \mathbb{R}}
 
-    \deqn{y \in \R}
+    \deqn{y \in \mathbb{R}}
 
     \deqn{a > 1}
     
 Range of function:
 
-    \deqn{S(x, y, a) \geq 0, \forall x, y \in \R, a > 1}
+    \deqn{S(x, y, a) \geq 0, \forall x, y \in \mathbb{R}, a > 1}
 }
 
 \value{
@@ -59,19 +59,19 @@ The implemented function is denoted as type 1 since it corresponds to a specific
 type of \eqn{\phi(x)} of the general form of the Bregman scoring function
 defined by eq. (18) in Gneiting (2011).
 
-For details on the Bregman scoring function, see Savage 1971, Banerjee et al.
+For details on the Bregman scoring function, see Savage (1971), Banerjee et al.
 (2005) and Gneiting (2011).
 
-The mean functional is the mean \eqn{E_F[Y]} of the probability distribution
-\eqn{F} of \eqn{y} (Gneiting 2011).
+The mean functional is the mean \eqn{\textnormal{E}_F[Y]} of the probability
+distribution \eqn{F} of \eqn{y} (Gneiting 2011).
 
 The Bregman scoring function is negatively oriented (i.e. the smaller, the
 better).
 
-The herein implemented Bregman scoring function is strictly consistent for the
-mean functional relative to the family \eqn{\mathbb{F}} of potential probability
-distributions \eqn{F} for the future \eqn{y} for which \eqn{E_F[Y]} and
-\eqn{E_F[|Y|^a]} exist and are finite (Savage 1971, Gneiting 2011).
+The herein implemented Bregman scoring function is strictly
+\eqn{\mathbb{F}}-consistent for the mean functional. \eqn{\mathbb{F}} is the
+family of probability distributions for which \eqn{\textnormal{E}_F[Y]} and
+\eqn{\textnormal{E}_F[|Y|^a]} exist and are finite (Savage 1971; Gneiting 2011).
 }
 
 \references{

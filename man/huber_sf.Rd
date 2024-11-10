@@ -40,17 +40,27 @@ The Huber scoring function is defined by:
         \right.
     }
 
+or equivalently
+
+    \deqn{
+        S(x, y, a) := (1/2) \kappa_{a,a}(x - y) (2 (x - y) - \kappa_{a,a}(x - y))
+    }
+
+where \eqn{\kappa_{a,b}(t)} is the capping function defined by:
+
+    \deqn{\kappa_{a,b}(t) := \max \lbrace \min \lbrace t,b \rbrace, -a \rbrace}
+
 Domain of function:
 
-    \deqn{x \in \R}
+    \deqn{x \in \mathbb{R}}
 
-    \deqn{y \in \R}
+    \deqn{y \in \mathbb{R}}
 
     \deqn{a > 0}
     
 Range of function:
 
-    \deqn{S(x, y, a) \geq 0, \forall x, y \in \R, a > 0}
+    \deqn{S(x, y, a) \geq 0, \forall x, y \in \mathbb{R}, a > 0}
 }
 
 \value{
@@ -63,14 +73,15 @@ For the definition of Huber mean, see Taggart (2022).
 The Huber scoring function is negatively oriented (i.e. the smaller, the
 better).
 
-The Huber scoring function is strictly consistent for the Huber mean relative to
-the family \eqn{\mathbb{F}} of potential probability distributions \eqn{F} for
-the future \eqn{y} for which \eqn{E_F[Y^2 - (Y - a)^2]} and
-\eqn{E_F[Y^2 - (Y + a)^2]} exist and are finite (Taggart 2022).
+The Huber scoring function is strictly \eqn{\mathbb{F}}-consistent for the Huber
+mean. \eqn{\mathbb{F}} is the family of probability distributions \eqn{F} for
+which \eqn{\textnormal{E}_F[Y^2 - (Y - a)^2]} and
+\eqn{\textnormal{E}_F[Y^2 - (Y + a)^2]} (or equivalently
+\eqn{\textnormal{E}_F[Y]}) exist and are finite (Taggart 2022).
 }
 
 \references{
-Huber PJ (1964) Robust Estimation of a Location Parameter.
+Huber PJ (1964) Robust estimation of a location parameter.
 \emph{Annals of Mathematical Statistics} \bold{35(1)}:73--101.
 \doi{10.1214/aoms/1177703732}.
 

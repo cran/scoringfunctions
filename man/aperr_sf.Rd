@@ -59,12 +59,15 @@ median of a probability distribution whose density is proportional to
 The absolute percentage error scoring function is negatively oriented (i.e. the
 smaller, the better).
 
-The absolute percentage error scoring function is strictly consistent for the
-\eqn{\textnormal{med}^{(-1)}(F)} functional relative to the family
-\eqn{\mathbb{F}} of potential probability distributions (whose densities are
-proportional to \eqn{y^{-1} f(y)}, where \eqn{f} is the density of the
-probability distribution \eqn{F}  for the future \eqn{y}) for which the first
-moment exists and is finite (see Theorems 5 and 9 in Gneiting 2011).
+The absolute percentage error scoring function is strictly
+\eqn{\mathbb{F}^{(w)}}-consistent for the \eqn{\textnormal{med}^{(-1)}(F)}
+functional. \eqn{\mathbb{F}} is the family of probability distributions for
+which \eqn{\textnormal{E}_F[Y]} exists and is finite. \eqn{\mathbb{F}^{(w)}} is
+the subclass of probability distributions in \eqn{\mathbb{F}}, which are such
+that \eqn{w(y) f(y)}, \eqn{w(y) = 1/y} has finite integral over
+\eqn{(0, \infty)}, and the probability distribution \eqn{F^{(w)}} with density
+proportional to \eqn{w(y) f(y)} belongs to \eqn{\mathbb{F}} (see Theorems 5 and
+9 in Gneiting 2011).
 }
 
 \references{
