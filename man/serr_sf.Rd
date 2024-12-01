@@ -8,7 +8,7 @@ Squared error scoring function
 
 \description{
 The function serr_sf computes the squared error scoring function when \eqn{y}
-materializes and \eqn{x} is the predictive mean functional.
+materialises and \eqn{x} is the predictive mean functional.
 
 The squared error scoring function is defined in Table 1 in Gneiting (2011).
 }
@@ -21,7 +21,7 @@ serr_sf(x, y)
 \item{x}{Predictive mean functional (prediction). It can be a vector of length
 \eqn{n} (must have the same length as \eqn{y}).}
 
-\item{y}{Realization (true value) of process. It can be a vector of length
+\item{y}{Realisation (true value) of process. It can be a vector of length
 \eqn{n} (must have the same length as \eqn{x}).}
 }
 

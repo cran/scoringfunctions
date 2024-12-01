@@ -8,7 +8,7 @@ Interval scoring function (Winkler scoring function)
 
 \description{
 The function interval_sf computes the interval scoring function (Winkler scoring
-function) when \eqn{y} materializes and \eqn{[x_1, x_2]} is the central
+function) when \eqn{y} materialises and \eqn{[x_1, x_2]} is the central
 \eqn{1 - p} prediction interval.
 
 The interval scoring function is defined by eq. (43) in Gneiting and Raftery
@@ -26,7 +26,7 @@ vector of length \eqn{n} (must have the same length as \eqn{y}).}
 \item{x2}{Predictive quantile (prediction) at level \eqn{1 - p/2}. It can be a
 vector of length \eqn{n} (must have the same length as \eqn{y}).}
 
-\item{y}{Realization (true value) of process. It can be a vector of length
+\item{y}{Realisation (true value) of process. It can be a vector of length
 \eqn{n} (must have the same length as \eqn{x_1}).}
 
 \item{p}{It can be a vector of length \eqn{n} (must have the same length as

@@ -8,7 +8,7 @@ Absolute error scoring function
 
 \description{
 The function aerr_sf computes the absolute error scoring function when \eqn{y}
-materializes and \eqn{x} is the predictive median functional.
+materialises and \eqn{x} is the predictive median functional.
 
 The absolute error scoring function is defined in Table 1 in Gneiting (2011).
 }
@@ -21,7 +21,7 @@ aerr_sf(x, y)
 \item{x}{Predictive median functional (prediction). It can be a vector of length
 \eqn{n} (must have the same length as \eqn{y}).}
 
-\item{y}{Realization (true value) of process. It can be a vector of length
+\item{y}{Realisation (true value) of process. It can be a vector of length
 \eqn{n} (must have the same length as \eqn{x}).}
 }
 

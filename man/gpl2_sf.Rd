@@ -9,7 +9,7 @@ Generalized piecewise linear power scoring function (type 2)
 \description{
 The function gpl2_sf computes the generalized piecewise linea power scoring
 function at a specific level \eqn{p} for \eqn{g(x) = \log(x)}, when \eqn{y}
-materializes and \eqn{x} is the predictive quantile at level \eqn{p}.
+materialises and \eqn{x} is the predictive quantile at level \eqn{p}.
 
 The generalized piecewise linear power scoring function is negatively oriented
 (i.e. the smaller, the better).
@@ -27,7 +27,7 @@ gpl2_sf(x, y, p)
 \item{x}{Predictive quantile (prediction) at level \eqn{p}. It can be a vector
 of length \eqn{n} (must have the same length as \eqn{y}).}
 
-\item{y}{Realization (true value) of process. It can be a vector of length
+\item{y}{Realisation (true value) of process. It can be a vector of length
 \eqn{n} (must have the same length as \eqn{x}).}
 
 \item{p}{It can be a vector of length \eqn{n} (must have the same length as

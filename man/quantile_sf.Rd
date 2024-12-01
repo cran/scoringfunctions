@@ -10,7 +10,7 @@ quantile loss function)
 \description{
 The function quantile_sf computes the asymmetric piecewise linear scoring
 function (quantile scoring function) at a specific level \eqn{p}, when \eqn{y}
-materializes and \eqn{x} is the predictive quantile at level \eqn{p}.
+materialises and \eqn{x} is the predictive quantile at level \eqn{p}.
 
 The asymmetric piecewise linear scoring function is defined by eq. (24) in
 Gneiting (2011).
@@ -24,7 +24,7 @@ quantile_sf(x, y, p)
 \item{x}{Predictive quantile (prediction) at level \eqn{p}. It can be a vector
 of length \eqn{n} (must have the same length as \eqn{y}).}
 
-\item{y}{Realization (true value) of process. It can be a vector of length
+\item{y}{Realisation (true value) of process. It can be a vector of length
 \eqn{n} (must have the same length as \eqn{x}).}
 
 \item{p}{It can be a vector of length \eqn{n} (must have the same length as

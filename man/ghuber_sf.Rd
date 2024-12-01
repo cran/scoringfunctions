@@ -9,7 +9,7 @@ Generalized Huber scoring function
 \description{
 The function ghuber_sf computes the generalized Huber scoring function at a
 specific level \eqn{p} and parameters \eqn{a} and \eqn{b}, when \eqn{y}
-materializes and \eqn{x} is the predictive Huber functional at level \eqn{p}.
+materialises and \eqn{x} is the predictive Huber functional at level \eqn{p}.
 
 The generalized Huber scoring function is defined by eq. (4.7) in Taggart (2022)
 for \eqn{\phi(t) = t^2}.
@@ -23,7 +23,7 @@ ghuber_sf(x, y, p, a, b)
 \item{x}{Predictive Huber functional (prediction) at level \eqn{p}. It can be a
 vector of length \eqn{n} (must have the same length as \eqn{y}).}
 
-\item{y}{Realization (true value) of process. It can be a vector of length
+\item{y}{Realisation (true value) of process. It can be a vector of length
 \eqn{n} (must have the same length as \eqn{x}).}
 
 \item{p}{It can be a vector of length \eqn{n} (must have the same length as

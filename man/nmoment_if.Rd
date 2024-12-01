@@ -8,7 +8,7 @@
 
 \description{
 The function nmoment_if computes the \eqn{n}-th moment identification function,
-when \eqn{y} materializes and \eqn{x} is the predictive \eqn{n}-th moment.
+when \eqn{y} materialises and \eqn{x} is the predictive \eqn{n}-th moment.
 
 The expectile identification function is defined in Table 9 in Gneiting (2011)
 by setting \eqn{r(t) = t^n} and \eqn{s(t) = 1}.
@@ -22,7 +22,7 @@ nmoment_if(x, y, n)
 \item{x}{Predictive \eqn{n}-th moment. It can be a vector of length \eqn{m}
 (must have the same length as \eqn{y}).}
 
-\item{y}{Realization (true value) of process. It can be a vector of length
+\item{y}{Realisation (true value) of process. It can be a vector of length
 \eqn{m} (must have the same length as \eqn{x}).}
 
 \item{n}{\eqn{n}) is the moment order. It can be a vector of length \eqn{m}

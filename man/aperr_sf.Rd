@@ -8,7 +8,7 @@ Absolute percentage error scoring function
 
 \description{
 The function aperr_sf computes the absolute percentage error scoring function
-when \eqn{y} materializes and \eqn{x} is the predictive
+when \eqn{y} materialises and \eqn{x} is the predictive
 \eqn{\textnormal{med}^{(-1)}(F)} functional.
 
 The absolute percentage error scoring function is defined in Table 1 in
@@ -23,7 +23,7 @@ aperr_sf(x, y)
 \item{x}{Predictive \eqn{\textnormal{med}^{(-1)}(F)} functional (prediction). It
 can be a vector of length \eqn{n} (must have the same length as \eqn{y}).}
 
-\item{y}{Realization (true value) of process. It can be a vector of length
+\item{y}{Realisation (true value) of process. It can be a vector of length
 \eqn{n} (must have the same length as \eqn{x}).}
 }
 

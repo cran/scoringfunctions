@@ -8,7 +8,7 @@
 
 \description{
 The function bmedian_sf computes the \eqn{\beta}-median scoring function
-when \eqn{y} materializes and \eqn{x} is the predictive
+when \eqn{y} materialises and \eqn{x} is the predictive
 \eqn{\textnormal{med}^{(\beta)}(F)} functional.
 
 The \eqn{\beta}-median scoring function is defined in eq. (4) in Gneiting
@@ -23,7 +23,7 @@ bmedian_sf(x, y, b)
 \item{x}{Predictive \eqn{\textnormal{med}^{(\beta)}(F)} functional (prediction).
 It can be a vector of length \eqn{n} (must have the same length as \eqn{y}).}
 
-\item{y}{Realization (true value) of process. It can be a vector of length
+\item{y}{Realisation (true value) of process. It can be a vector of length
 \eqn{n} (must have the same length as \eqn{x}).}
 
 \item{b}{It can be a vector of length \eqn{n} (must have the same length as

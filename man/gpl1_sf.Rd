@@ -9,7 +9,7 @@ Generalized piecewise linear power scoring function (type 1)
 \description{
 The function gpl1_sf computes the generalized piecewise linear power scoring
 function at a specific level \eqn{p} for \eqn{g(x) = x^b/|b|}, \eqn{b > 0}, when
-\eqn{y} materializes and \eqn{x} is the predictive quantile at level \eqn{p}.
+\eqn{y} materialises and \eqn{x} is the predictive quantile at level \eqn{p}.
 
 The generalized piecewise linear power scoring function is defined by eq. (25)
 in Gneiting (2011) and the form implemented here for the specific \eqn{g(x)} is
@@ -24,7 +24,7 @@ gpl1_sf(x, y, p, b)
 \item{x}{Predictive quantile (prediction) at level \eqn{p}. It can be a vector
 of length \eqn{n} (must have the same length as \eqn{y}).}
 
-\item{y}{Realization (true value) of process. It can be a vector of length
+\item{y}{Realisation (true value) of process. It can be a vector of length
 \eqn{n} (must have the same length as \eqn{x}).}
 
 \item{p}{It can be a vector of length \eqn{n} (must have the same length as

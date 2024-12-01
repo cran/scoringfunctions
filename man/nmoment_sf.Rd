@@ -8,7 +8,7 @@
 
 \description{
 The function nmoment_sf computes the \eqn{n}-th moment scoring function, when
-\eqn{y} materializes, and \eqn{\textnormal{E}_F[Y^n]} is the predictive
+\eqn{y} materialises, and \eqn{\textnormal{E}_F[Y^n]} is the predictive
 \eqn{n}-th moment.
 
 The \eqn{n}-th moment scoring function is defined by eq. (22) in Gneiting (2011)
@@ -24,7 +24,7 @@ nmoment_sf(x, y, n)
 \item{x}{Predictive \eqn{n}-th moment. It can be a vector of length \eqn{m}
 (must have the same length as \eqn{y}).}
 
-\item{y}{Realization (true value) of process. It can be a vector of length
+\item{y}{Realisation (true value) of process. It can be a vector of length
 \eqn{m} (must have the same length as \eqn{x}).}
 
 \item{n}{\eqn{n}) is the moment order. It can be a vector of length \eqn{m}

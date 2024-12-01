@@ -8,7 +8,7 @@ Mean identification function
 
 \description{
 The function mean_if computes the mean identification function , when \eqn{y}
-materializes and \eqn{x} is the predictive mean.
+materialises and \eqn{x} is the predictive mean.
 
 The mean identification function is defined in Table 9 in Gneiting (2011).
 }
@@ -21,7 +21,7 @@ mean_if(x, y)
 \item{x}{Predictive expectile (prediction) at level \eqn{p}. It can be a vector
 of length \eqn{n} (must have the same length as \eqn{y}).}
 
-\item{y}{Realization (true value) of process. It can be a vector of length
+\item{y}{Realisation (true value) of process. It can be a vector of length
 \eqn{n} (must have the same length as \eqn{x}).}
 }
 

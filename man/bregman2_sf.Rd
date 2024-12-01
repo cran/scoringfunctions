@@ -8,7 +8,7 @@ Bregman scoring function (type 2, Patton scoring function)
 
 \description{
 The function bregman2_sf computes the Bregman scoring function when \eqn{y}
-materializes and \eqn{x} is the predictive mean functional.
+materialises and \eqn{x} is the predictive mean functional.
 
 The Bregman scoring function is defined by eq. (18) in Gneiting (2011) and the
 form implemented here for \eqn{\phi(x) = \dfrac{1}{b (b - 1)} x^b},
@@ -24,7 +24,7 @@ bregman2_sf(x, y, b)
 \item{x}{Predictive mean functional (prediction). It can be a vector of length
 \eqn{n} (must have the same length as \eqn{y}).}
 
-\item{y}{Realization (true value) of process. It can be a vector of length
+\item{y}{Realisation (true value) of process. It can be a vector of length
 \eqn{n} (must have the same length as \eqn{x}).}
 
 \item{b}{It can be a vector of length \eqn{n} (must have the same length as

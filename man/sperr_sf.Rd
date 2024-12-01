@@ -8,7 +8,7 @@ Squared percentage error scoring function
 
 \description{
 The function sperr_sf computes the squared percentage error scoring function
-when \eqn{y} materializes and \eqn{x} is the predictive
+when \eqn{y} materialises and \eqn{x} is the predictive
 \eqn{\dfrac{\textnormal{E}_F [Y^{-1}]}{\textnormal{E}_F [Y^{-2}]}} functional.
 
 The squared percentage error scoring function is defined in p. 752 in
@@ -24,7 +24,7 @@ sperr_sf(x, y)
 functional (prediction). It can be a vector of length \eqn{n} (must have the
 same length as \eqn{y}).}
 
-\item{y}{Realization (true value) of process. It can be a vector of length
+\item{y}{Realisation (true value) of process. It can be a vector of length
 \eqn{n} (must have the same length as \eqn{x}).}
 }
 

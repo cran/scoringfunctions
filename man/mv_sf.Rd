@@ -8,7 +8,7 @@ Mean - variance scoring function
 
 \description{
 The function mv_sf computes the mean - variance scoring function, when \eqn{y}
-materializes, \eqn{x_1} is the predictive mean and \eqn{x_2} is the predictive
+materialises, \eqn{x_1} is the predictive mean and \eqn{x_2} is the predictive
 variance.
 
 The mean - variance scoring function is defined by eq. (3.11) in Fissler and
@@ -26,8 +26,8 @@ mv_sf(x1, x2, y)
 \item{x2}{Predictive variance (prediction). It can be a vector of length \eqn{n}
 (must have the same length as \eqn{y}).}
 
-\item{y}{Realization (true value) of process. It can be a vector of length
-\eqn{n} (must have the same length as \eqn{x}).}
+\item{y}{Realisation (true value) of process. It can be a vector of length
+\eqn{n} (must have the same length as \eqn{x_1}).}
 }
 
 \details{

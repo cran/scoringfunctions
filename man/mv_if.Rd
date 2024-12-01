@@ -8,7 +8,7 @@ Mean - variance identification function
 
 \description{
 The function mv_if computes the mean - variance identification function, when
-\eqn{y} materializes, \eqn{x_1} is the predictive mean and \eqn{x_2} is the
+\eqn{y} materialises, \eqn{x_1} is the predictive mean and \eqn{x_2} is the
 predictive variance.
 
 The mean - variance identification function is defined in proposition (3.11) in
@@ -26,8 +26,8 @@ mv_if(x1, x2, y)
 \item{x2}{Predictive variance (prediction). It can be a vector of length \eqn{n}
 (must have the same length as \eqn{y}).}
 
-\item{y}{Realization (true value) of process. It can be a vector of length
-\eqn{n} (must have the same length as \eqn{x}).}
+\item{y}{Realisation (true value) of process. It can be a vector of length
+\eqn{n} (must have the same length as \eqn{x_1}).}
 }
 
 \details{

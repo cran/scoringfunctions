@@ -8,7 +8,7 @@ Expectile identification function
 
 \description{
 The function expectile_if computes the expectile identification function at a
-specific level \eqn{p}, when \eqn{y} materializes and \eqn{x} is the predictive
+specific level \eqn{p}, when \eqn{y} materialises and \eqn{x} is the predictive
 expectile at level \eqn{p}.
 
 The expectile identification function is defined in Table 9 in Gneiting (2011).
@@ -22,7 +22,7 @@ expectile_if(x, y, p)
 \item{x}{Predictive expectile (prediction) at level \eqn{p}. It can be a vector
 of length \eqn{n} (must have the same length as \eqn{y}).}
 
-\item{y}{Realization (true value) of process. It can be a vector of length
+\item{y}{Realisation (true value) of process. It can be a vector of length
 \eqn{n} (must have the same length as \eqn{x}).}
 
 \item{p}{It can be a vector of length \eqn{n} (must have the same length as

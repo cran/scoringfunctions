@@ -8,7 +8,7 @@ Huber scoring function
 
 \description{
 The function huber_sf computes the Huber scoring function with parameter
-\eqn{a}, when \eqn{y} materializes and \eqn{x} is the predictive Huber mean.
+\eqn{a}, when \eqn{y} materialises and \eqn{x} is the predictive Huber mean.
 
 The Huber scoring function is defined in Huber (1964).
 }
@@ -21,7 +21,7 @@ huber_sf(x, y, a)
 \item{x}{Predictive Huber mean (prediction). It can be a vector of length
 \eqn{n} (must have the same length as \eqn{y}).}
 
-\item{y}{Realization (true value) of process. It can be a vector of length
+\item{y}{Realisation (true value) of process. It can be a vector of length
 \eqn{n} (must have the same length as \eqn{x}).}
 
 \item{a}{It can be a vector of length \eqn{n} (must have the same length as

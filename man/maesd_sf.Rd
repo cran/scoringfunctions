@@ -8,7 +8,7 @@ MAE-SD scoring function
 
 \description{
 The function maesd_sf computes the MAE-SD scoring function when \eqn{y}
-materializes and \eqn{x} is the predictive median functional.
+materialises and \eqn{x} is the predictive median functional.
 
 The MAE-SD scoring function is defined by eq. (12) in Patton (2011).
 }
@@ -21,7 +21,7 @@ maesd_sf(x, y)
 \item{x}{Predictive median functional (prediction). It can be a vector of length
 \eqn{n} (must have the same length as \eqn{y}).}
 
-\item{y}{Realization (true value) of process. It can be a vector of length
+\item{y}{Realisation (true value) of process. It can be a vector of length
 \eqn{n} (must have the same length as \eqn{x}).}
 }
 

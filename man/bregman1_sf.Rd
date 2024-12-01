@@ -8,7 +8,7 @@ Bregman scoring function (type 1)
 
 \description{
 The function bregman1_sf computes the Bregman scoring function when \eqn{y}
-materializes and \eqn{x} is the predictive mean functional.
+materialises and \eqn{x} is the predictive mean functional.
 
 The Bregman scoring function is defined by eq. (18) in Gneiting (2011) and the
 form implemented here for \eqn{\phi(x) = |x|^a} is defined by eq. (19) in
@@ -23,7 +23,7 @@ bregman1_sf(x, y, a)
 \item{x}{Predictive mean functional (prediction). It can be a vector of length
 \eqn{n} (must have the same length as \eqn{y}).}
 
-\item{y}{Realization (true value) of process. It can be a vector of length
+\item{y}{Realisation (true value) of process. It can be a vector of length
 \eqn{n} (must have the same length as \eqn{x}).}
 
 \item{a}{It can be a vector of length \eqn{n} (must have the same length as
