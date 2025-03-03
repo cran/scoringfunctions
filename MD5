@@ -1,5 +1,5 @@
-6217b7b5f0a11575ffbd7b23e97fdcd1 *DESCRIPTION
-4e61a4e75165fc7f688af8dfcd35f3c0 *NAMESPACE
+0cec5e9c79a194c30a2e2424d8712801 *DESCRIPTION
+86db9309b5d8af90636493a3dbfd27fa *NAMESPACE
 74d4b6b46d7594be2e4fcd0da95c6cc2 *R/aerr_sf.R
 7e51a8f00474fbdaf541d74ca17f453f *R/aperr_sf.R
 db0baf53f6158ad90ec3bf987e362e93 *R/bmedian_sf.R
@@ -28,6 +28,7 @@ cebfe9740d6f67ee720000f346dcf67b *R/maelog_sf.R
 e0702a84545fdf6b51f618ea5bf9c0a8 *R/maesd_sf.R
 c9aa95e29cd9adec6479e3c9556a04e6 *R/mape.R
 366cae550a1d661e7db5c61ca0030c0f *R/mean_if.R
+62fb814d030e42a2cd902e3c550ec144 *R/meanlog_if.R
 4db3c186f092d37d092ac65e9cf45e9d *R/mre.R
 ac6addc75c025c551cea77af8fc4fbcb *R/mse.R
 5321abb86e675f97fe15add3a43dd52e *R/mspe.R
@@ -44,9 +45,13 @@ df7681bb24bf7285ebd7a24f5bbceee6 *R/quantile_rs.R
 3d7cc1132c97d81f454cf6f92601e0d9 *R/quantile_sf.R
 4e6191abbe1edeba73d8edd3d5940d22 *R/relerr_sf.R
 178858ce0f8779049d0cc7a048f47592 *R/serr_sf.R
+1878886c7675dd7ff6e768cb4d99f984 *R/serrexp_sf.R
+043e4951c9941f296837c0e7148b4687 *R/serrlog_sf.R
+5daf47def1e45fa39ac725d83de311bf *R/serrpower_sf.R
+c9f468c6790ecb1c5d85ebdc46da3374 *R/serrsq_sf.R
 5af190be7c5502c5f5bb564ffe7230c1 *R/sperr_sf.R
 0db05364dc1c923f9b7e8b873804e581 *R/srelerr_sf.R
-1dda19015f0aa969acee990c150e3ac9 *build/partial.rdb
+75d0a007992c60d09f764686e9397c0f *build/partial.rdb
 dfdf06ec283ff5fa388758cb3a47bb22 *inst/CITATION
 43ec6c8f281f107d857698e1119f9a01 *man/aerr_sf.Rd
 bf81c8429e94b8a78339dd67beee3b55 *man/aperr_sf.Rd
@@ -75,7 +80,8 @@ b5284554e8c4ce187a2ede4cd6c7380c *man/linex_sf.Rd
 b747e2fdb56071d58c3cb5a7780e6cac *man/maelog_sf.Rd
 9f1a099ad7d8bbeef51c17607f7a24ea *man/maesd_sf.Rd
 bf1b2b093b9d11fefb4415c2aa6d0fad *man/mape.Rd
-72866cf14eb609ccc02cff2395ab9fb6 *man/mean_if.Rd
+81beec2b2830166d3edf155ed6166170 *man/mean_if.Rd
+c4f18f50e1388c333712dec5352f216d *man/meanlog_if.Rd
 c816e2c8093b55c3721658b8a72ebb11 *man/mre.Rd
 e267dcbbf44ea255d9f51fe8d877676a *man/mse.Rd
 9d5376e42dddd59a0bcffbdb72af80c7 *man/mspe.Rd
@@ -91,7 +97,11 @@ f23bcde0d2ddda08806cf846d4b0ec10 *man/quantile_if.Rd
 3417cf38f0362d97bf35758607e40c6f *man/quantile_rs.Rd
 b5ff14f45abaa7459033d360eb4a83a3 *man/quantile_sf.Rd
 36a3ae9089041ee220e0da0a3962233e *man/relerr_sf.Rd
-198683db30427ad6fd5e5ffabdc9abf7 *man/scoringfunctions-package.Rd
+07a3c34773b0bceae9952fc06b0804b2 *man/scoringfunctions-package.Rd
 87ad61ce3cc723913e76a0f335450b5a *man/serr_sf.Rd
+432b17444c3042226eb5448598896b7f *man/serrexp_sf.Rd
+b9927286a8325334c49233fbabcceb82 *man/serrlog_sf.Rd
+6a7459f0bfb54b1d600c577cce38318b *man/serrpower_sf.Rd
+dccbb4521ae15187cc8e3f8fa32f4b91 *man/serrsq_sf.Rd
 35eb8f149f0cd3727365daadde52cbb7 *man/sperr_sf.Rd
 e723b502df885dc59b0f9ef633614fea *man/srelerr_sf.Rd

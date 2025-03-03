@@ -1,7 +1,7 @@
 Package: scoringfunctions
-Version: 1.0
-Date: 2024-12-01
-Title: A Collection of Scoring Functions for Assessing Point Forecasts
+Version: 1.1
+Date: 2025-03-03
+Title: A Collection of Loss Functions for Assessing Point Forecasts
 Authors@R: c(
     person(given = "Hristos",
            family = "Tyralis",
@@ -28,5 +28,5 @@ Author: Hristos Tyralis [aut, cre] (<https://orcid.org/0000-0002-8932-4997>),
 Maintainer: Hristos Tyralis <montchrister@gmail.com>
 Repository: CRAN
 NeedsCompilation: no
-Packaged: 2024-12-01 08:50:15 UTC; AB
-Date/Publication: 2024-12-01 09:10:02 UTC
+Packaged: 2025-03-03 16:40:12 UTC; AB
+Date/Publication: 2025-03-03 17:00:02 UTC

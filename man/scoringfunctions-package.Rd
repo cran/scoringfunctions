@@ -117,6 +117,15 @@ The package functions are categorized into the following classes:
     \code{\link{relerr_sf}}: Relative error scoring function (MAE-PROP scoring
         function)
 
+    \code{\link{serrexp_sf}}: Squared error exp scoring function
+
+    \code{\link{serrlog_sf}}: Squared error log scoring function
+
+    \code{\link{serrpower_sf}}: Squared error of power transformations scoring
+        function
+
+    \code{\link{serrsq_sf}}: Squared error of squares scoring function
+
     \code{\link{sperr_sf}}: Squared percentage error scoring function
 
     \code{\link{srelerr_sf}}: Squared relative error scoring function
@@ -190,14 +199,15 @@ The package functions are categorized into the following classes:
     
     \code{\link{hubermean_if}}: Huber mean identification function
 
-    \code{\link{hubermean_if}}: Huber quantile identification function
+    \code{\link{huberquantile_if}}: Huber quantile identification function
 
     \code{\link{mean_if}}: Mean identification function
+
+    \code{\link{meanlog_if}}: Log-transformed identification function
 
     \code{\link{nmoment_if}}: \eqn{n}-th moment identification function
 
     \code{\link{quantile_if}}: Quantile identification function
-
 }
 
 \subsection{4.2. Identification functions for two-dimensional functionals}{

@@ -18,8 +18,8 @@ mean_if(x, y)
 }
 
 \arguments{
-\item{x}{Predictive expectile (prediction) at level \eqn{p}. It can be a vector
-of length \eqn{n} (must have the same length as \eqn{y}).}
+\item{x}{Predictive mean (prediction). It can be a vector of length \eqn{n}
+(must have the same length as \eqn{y}).}
 
 \item{y}{Realisation (true value) of process. It can be a vector of length
 \eqn{n} (must have the same length as \eqn{x}).}
